@@ -7,7 +7,6 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 5em;
-    margin-left: 5em;
 }
 
 h1 {
@@ -24,7 +23,7 @@ hr {
     /* width: 340%; */
 }
 
-p {
+p, label {
     color: black;
     font-family: forma-djr-micro, sans-serif;
     font-weight: 400;
@@ -40,16 +39,27 @@ input {
     background-color: white;
     border-radius: 30px 30px;
     border: 1px solid #004080;
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal; 
     padding: 8px 8px;
     width: 200px;
 }
 
 .forgot {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
+}
+
+.checkbox {
+    margin: 0 0;
+    width: 50px;
 }
 
 .submit {
     background-color: #004080;
     color: white;
+    font-family: forma-djr-micro, sans-serif;
+    font-weight: 400;
+    font-style: normal; 
     width: 120px;
 }
