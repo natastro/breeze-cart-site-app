@@ -202,3 +202,40 @@ img:hover {
   height: 250px;
 }
 
+.searchbox {
+  border: 1px solid #004080; 
+  border-radius: 7px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  margin: 0px;
+}
+.searchbutton {
+  border-radius: 7px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  background-color: white;
+  color: #004080;
+  border: 1px solid #004080;
+  font-family: forma-djr-micro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 2%;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  text-align: center;
+  border-left: none;
+}
+
+.searchbutton:hover {
+  background-color: #004080;
+  color: white;
+  border: 1px solid #004080;
+  font-family: forma-djr-micro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 2%;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  text-align: center;
+  border-left: none;
+}
