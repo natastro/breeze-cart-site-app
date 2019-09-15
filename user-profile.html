@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello, {userName}!</title>
+        <meta name="viewport" content="width=device-width">
+        <!-- CSS Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="user.css">
+        <!-- Adobe Fonts -->
+        <link rel="stylesheet" href="https://use.typekit.net/kyf6owj.css">
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="nav">
+            <div class="nav-snippets5">
+                <!--NAVIGATION STYLE #5-->
+                <nav>
+                    <div class="nav5">
+                        <ul>
+                            <li><a href="#" class="nav5-links">Cart <i class="fas fa-shopping-cart"></i></a></li>
+                            <li><a href="#" class="nav5-links">Stores <i class="fas fa-store-alt"></i></a></li>
+                        </ul>
+                        <h1 class="logo-text2">BREEZE CART</h1>
+                        <div class="social-icon-container">
+                            <!-- Login would disappear if user is logged in -->
+                            <a href="sign-in.html"><p class="nav5-links">Login <i class="fas fa-sign-in-alt"></i></p></a>
+                            <!-- User would change to person's name after logging in. -->
+                            <p class="nav5-links">User <i class="fas fa-user-circle"></i>
+                        </div>
+                    </div>
+                </nav>
+                <!--NAVIGATION STYLE #5-->
+            </div>
+        </div>
+
+        <section class="user">
+            <div id="profile-picture">
+                <img src="https://randomuser.me/api/portraits/lego/1.jpg" />
+            </div>
+            <div id="profile-info">
+                <h2>Billy Bob</h2>
+                <button class="accordion">About</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <button class="accordion">Credentials</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <button class="accordion">Payment Settings</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="home">
+                <a href="front-page.html"><button class="submit home cursor">HOME</button></a>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <h1>My Account</h1>
+                <ul style="list-style-type: none;">
+                    <li>Order Status</li>
+                    <li>Past Orders</li>
+                </ul>
+                <h1>Help</h1>
+                <ul style="list-style-type: none;">
+                    <li>Contact Us</li>
+                    <li>FAQ</li>
+                    <li>Customer Service</li>
+                    <li>Ingredients + Nutrition</li>
+                </ul>
+            </div>                        
+        </footer>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+        </script>
+
+    </body>
+</html>
